@@ -3,22 +3,4 @@
     <meta charset="UTF-8">
     <title>はじめてのmBaaS</title>
   </head>
-  <script type="text/javascript" src="ncmb.min.js" charset="utf-8"></script>
-  <script>
-    // mobile backendアプリとの連携
-    var ncmb = new NCMB("988387867bdc3666aa263dcfdf0be20b98cf7775b7c9ee024e7fdd808e9c4a26","b884372fd7a430489bcdf3a45865764fa242d491f5e934f9298a65a11b87a71e");
-    
-    // クラスのTestClassを作成
-    var TestClass = ncmb.DataStore("TestClass");
-    // データストアへの登録
-    var testClass = new TestClass();
-    testClass.set("message", "Hello, NCMB!");
-    testClass.save()
-      .then(function(){
-        // 保存に成功した場合の処理
-      })
-      .catch(function(err){
-        // 保存に失敗した場合の処理
-      });
-  </script>
 </html>
